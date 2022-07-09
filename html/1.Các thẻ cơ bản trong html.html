@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Thẻ tiêu đề trang web -->
+    <title>HTML-CSS 21 ngày</title>
+</head>
+<body>
+    
+    <!-- 1. h1-h6:Thẻ tiêu đề  -->
+        <h1>Thẻ tiêu đề h1</h1>
+        <h2>Thẻ tiêu đề h2</h2>
+        <h3>Thẻ tiêu đề h3</h3>
+        <h4>Thẻ tiêu đề h4</h4>
+        <h5>Thẻ tiêu đề h5</h5>
+        <h6>Thẻ tiêu đề h6</h6>
+
+    <!-- 2. p: Thẻ định nghĩa nội dung văn bản -->
+        <p>Tôi tên là lê anh tú . năm nay tôi 20 tuổi . tôi đến từ Vĩnh Phúc</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quod voluptas corrupti animi eos? Veniam harum, veritatis accusantium numquam iusto tempora minima eveniet, rem aliquid ipsam molestiae! Molestias iusto quas iste! Cumque esse quae porro id rerum consectetur eveniet, earum tempora labore inventore odit ipsum numquam nisi itaque omnis quos aperiam eius sint suscipit at explicabo fugit veritatis voluptatum! Iure ullam consequuntur reprehenderit libero temporibus obcaecati dolorem explicabo provident accusamus officia magnam ipsa modi facilis, tenetur repellat quibusdam animi laborum aspernatur! Debitis incidunt nam accusamus molestias. Atque maxime quisquam maiores autem consequuntur. Accusantium sapiente placeat fuga qui officia aliquid assumenda!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quo perferendis pariatur! Quam corrupti, cumque praesentium odit, iure vero doloremque provident illum ex sed distinctio, alias voluptates numquam enim sunt!</p>
+
+
+    <!-- 3. br: Thẻ xuống dòng -->
+        <p>Tôi tên là lê anh tú <br> Tôi đến từ vĩnh phúc</p>
+
+    <!-- 4. img: Thẻ thêm hình ảnh  -->
+        <img src="/Image/ảnh naruto.jpg" alt="lỗi ảnh" title="ảnh naruto siêu ngầu">
+        <!-- title: khi ta hover chuột vào -->
+
+    <!-- 5. a:Thẻ liên kết giữa các trang trong cùng 1 trang web hoặc giữa các trang web khác nhau  -->
+        <a href="https://unitop.vn/n" target="blank">unitop.vn</a>
+        <!-- target="blank": chuyển đến trang web liên kết ở 1 tab mới -->
+
+        <a href="https://www.pinterest.com/hungnht1104/naruto/">
+            <img src="/Image/naruto_cute.png" alt="">
+            <!-- Dùng hình ảnh để chuyển đến trang khác -->
+        </a>
+
+        <!-- Tạo mục lục bằng thẻ link -->
+        <h3>Mục lục</h3>
+        <a href="#html">html</a>
+        <a href="#css">css</a>
+        <a href="#php">php</a>
+        
+        <h2 id="html">html</h2>
+        <p>Content html</p>
+        <h2 id="css">css</h2>
+        <p>Content css</p>
+        <h2 id="php">php</h2>
+        <p>Content php</p>
+
+    <!-- 6. Thẻ in đậm , in nghiêng, gạch chân -->
+        <b>Thẻ in đậm</b>
+        <strong>Thẻ in đậm</strong><br>
+
+        <i>Thẻ in nghiêng</i>
+        <em>Thẻ in nghiêng</em><br>
+        
+        <u>Thẻ gạch chân</u>
+
+    <!-- 7.Thẻ form -->
+        <form action="">
+            <input type="text" name="username" placeholder="nhập text" value="le anh tu"><br>
+            <!-- placeholder: gợi ý nhập , value: giá trị mặc định -->
+            <input type="password" placeholder="Mật khẩu">
+        </form>
+        <br>
+
+        <form action="">
+            <label for="username">Tên: </label>
+            <!-- Sự liên kết của for và id: khi ta bấm vào label nó sẽ forcus vào thẻ input -->
+            <input type="text" id="username">
+        </form>
+        <br>
+
+        <!-- input: email, number -->
+        <form action="">
+            <label for="email">Nhập email</label>
+            <input type="email" name="" id="email">
+            <br>    
+            <label for="amount">Nhập số lượng</label>
+            <input type="number" name="" id="amount" min="1" max="10">
+        </form><br>
+
+        <!-- input: date -->
+        <form action="">
+            <label for="birth">Nhập ngày tháng: </label>
+            <input type="date" name="" id="birth">
+        </form>
+
+        <!-- form nhập dữ liệu select box -->
+        <form action="">
+            <label for="list_city">Thành phố</label>
+            <select name="" id="list_city">
+                <option value="0">Chọn thành phố</option>
+                <option value="1">Thủ đô hà nội</option>
+                <option value="2">Thành phố huế</option>
+                <option value="3">Thành phố HCM</option>
+            </select>
+        </form><br>
+
+        <!-- input: radio - chỉ có thể chọn đc 1 sự lựa chọn-->
+        <form action="">
+            <label for="">Chọn giới tính</label><br>
+            <label for="Nam">Nam</label>
+            <input type="radio" name="gender" id="Nam" value="Nam">
+            <label for="Nu">Nu</label>
+            <input type="radio" name="gender" id="Nu" value="Nu">
+        </form><br>
+
+        <!-- input:checkbox - chọn được nhiều sự lựa chọn cùng lúc -->
+        <form action="">
+            <label for="">Sở thích của bạn</label><br>
+            <label for="game">Chơi game</label>
+            <input type="checkbox" name="favorite" id="game"><br>
+            <label for="soccer">Thể thao</label>
+            <input type="checkbox" name="favorite" id="soccer"><br>
+            <label for="book">Đọc sách</label>
+            <input type="checkbox" name="favorite" id="book"><br>
+        </form><br>
+
+        <!-- form nhập dữ liệu đoạn văn bản -->
+        <form action="">
+            <label for="post-content">Nhập đoạn văn</label><br>
+            <textarea name="" id="post-content" cols="30" rows="10"></textarea>
+        </form>
+
+        <!-- form lưu trữ dữ liệu ngầm(input hidden) :lưu trữ dữ liệu ngầm , ko cho người dùng nhập-->
+        <form action="">
+            <input type="hidden" name="redirect-to" value="unitop.vn">
+        </form><br>
+
+        <!-- submit dữ liệu lên server có 2 cách:input(submit) và button 
+            1.input(submit):dùng khi dữ liệu đẩy lên server chỉ có text
+            2.button:dùng cho tất cả các trường hợp khác
+        -->
+        <form action="" method="get">
+            <input type="text" name="username" placeholder="Tài khoản" value=""><br>
+            <input type="password" name="password" placeholder="Mật khẩu">
+            <br>
+            <!-- <input type="submit" value="Đăng nhập"> -->
+            <button name="btn-login">Đăng nhập</button>
+        </form>
+
+    <!-- 8.thẻ div phân chia layout -->
+        <div id="wrapper">
+            <div id="header">
+                <h3>header</h3>
+            </div>
+            <div id="content">
+                <h3>content</h3>
+            </div>
+            <div id="footer">
+                <h3>footer</h3>
+            </div>
+        </div>
+
+    <!-- HTML 5 -->
+        <!-- header,footer -->
+        <header>
+            <h3>header</h3>
+        </header>
+
+        <footer>
+            <h3>heaser</h3>
+        </footer>
+
+        <!-- Thẻ định nghĩa thanh điều hướng,các thẻ nav ko đc lồng nhau -->
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Thẻ định nghĩa bài viết -->
+        <article>
+            <h1>Cựu Thủ tướng Abe - "kiến trúc sư trưởng" các chính sách nổi tiếng Nhật Bản</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem nesciunt dolores, beatae mollitia voluptate quo eius, temporibus et praesentium assumenda molestias ducimus architecto culpa accusantium obcaecati. Nostrum architecto laboriosam similique.</p>
+        </article>
+
+        <!-- Thẻ định nghĩa khối layout -->
+        <section>
+            <h3>Các sản phẩm</h3>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </section>
+
+        <!-- Thẻ định nghĩa thông tin phụ -->
+        <aside>
+            <p>chú thích đơn giản</p>
+        </aside>
+</body>
+</html>

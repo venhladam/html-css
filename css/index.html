@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <!-- 3.external -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Có 3 cách nhúng css vào html:inline,internal,external
+        1.inline: viết ngay trên thẻ html
+        2.internal: viết trong cặp thẻ style
+        3.external: tạo ra 1 file .css và dùng thẻ link để liên kết với file html -->
+
+    <!-- 1.inline -->
+    <p style="color: red;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, quia.</p>
+
+    <!-- 2.internal -->
+    <style>
+        #wrapper {
+            border: 2px solid blue;
+        }
+        .text-red {
+            color: red;
+        }
+    </style>
+
+
+    <div id="wrapper">
+        <article>
+            <h2>Giới thiệu css</h2>
+            <p class="text-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quam.</p>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aut quidem dolores asperiores. Dolorem est perferendis veritatis? Laboriosam, reiciendis modi!</p>
+        </article>
+    </div>
+</body>
+</html>
