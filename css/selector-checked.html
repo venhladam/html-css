@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* Khi 1 cái input đc check thì cái label liền sau nó sẽ đc gọi */
+        input:checked + label{
+            color: violet;
+        }
+
+
+        #my-favorite input:checked + label {
+            color: chartreuse;
+        }
+    </style>
+    <h2>Lựa chọn giới tính</h2><br>
+    <form action="">
+        <input type="radio" name="sex" id="sex-nam" >
+        <label for="sex-nam">Nam</label><br>
+        <input type="radio" name="sex" id="sex-nu" >
+        <label for="sex-nu">Nữ</label>
+    </form>
+
+    <form action="" id="my-favorite">
+        <label for="">Sở thích của bạn</label><br><br>
+        <input type="checkbox" name="favorite" id="1">
+        <label for="1">Thể thao</label>
+        <input type="checkbox" name="favorite" id="2">
+        <label for="2">Đọc sách</label>
+        <input type="checkbox" name="favorite" id="3">
+        <label for="3">Chơi game</label>
+    </form>
+</body>
+</html>
