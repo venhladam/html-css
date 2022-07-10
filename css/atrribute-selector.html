@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* Các thẻ a có thuộc tính href */
+        a[href]{
+            color: aquamarine;
+        }
+        /* Các thẻ a có thuộc tính href="unitop.vn" */
+        a[href="unitop.vn"]{
+            color:brown;
+        }
+        /* Các thẻ a có thuộc tính href chứa chữ unitop */
+        a[href*="unitop"]{
+            color: chartreuse;
+        }
+        /* Các thẻ a có chứa href bắt đầu = u */
+        a[href^="u"]{
+            font-size: 30px;
+        }
+        /* Các thẻ a có chứa href kết thúc = .com */
+        a[href$=".com"]{
+            color: fuchsia;
+        }
+    </style>
+
+    <a href="unitop.vn">unitop.vn</a>
+    <a href="google.com">google</a>
+</body>
+</html>

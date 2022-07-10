@@ -1,0 +1,43 @@
+/* chọn tất cả các phần tử trong html */
+* {
+    color:pink;
+}
+
+/* Tất cả các phần tử nằm bên trong article */
+article *{
+    font-size: 30px;
+}
+
+/* element selector */
+h1 {
+    color:blue;
+}
+h2 {
+    color:red;
+}
+
+/* Class selector */
+.content {
+    font-style: italic;
+}
+
+/* id selector */
+#footer-end {
+    font-size: 40px;
+}
+ul a{
+    font-size: 20px;
+    color: seagreen;
+}
+ul.sub-menu a{
+    color: slateblue;
+}
+/* chọn các a là con trực tiếp của li , li là con trực tiếp của id main-menu */
+ul#main-menu>li>a{
+    color: skyblue;
+}
+
+/* selector theo nhóm */
+h1,h2,h3,p{
+    color: tomato;
+}
