@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Thiết lập đường gạch ngang text
+        text-decoration-line: line;
+        text-decoration-style: style;
+        text-decoration-color: color;
+        text-decoration: value;
+
+        line: underline(gạch dưới),overline(gạch trên),line-through(gạch giữa text,lỗi sai)
+        style: dashed(nét đứt),solid(nét liền),dotted(gạch chấm)
+        color: red,#333
+        chú ý:  để hủy bỏ đường gạch chân của text ta dùng
+        text-decoration: none;
+    -->
+    <style>
+        .text-underline {
+            text-decoration: underline;
+        }
+        .text-overline {
+            text-decoration: overline;
+        }
+        .text-line-through {
+            text-decoration: line-through;
+            text-decoration-style: dashed;
+        }
+        h2{
+            text-decoration: dotted underline red;
+        }
+        ul li a{
+            text-decoration: none;
+        }
+        
+    </style>
+
+    <p class="text-style-dashed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, qui molestiae odio esse dignissimos repudiandae ratione aperiam delectus dicta minima?</p>
+    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur at atque molestiae quod pariatur veritatis omnis numquam, cum molestias sint, amet officiis dicta animi voluptatem placeat mollitia magni velit aut!</h2>
+    <ul>
+        <li><a href="">Trang chủ</a></li>
+        <li><a href="">PHP</a></li>
+        <li><a href="">Javascript</a></li>
+    </ul>
+</body>
+</html>

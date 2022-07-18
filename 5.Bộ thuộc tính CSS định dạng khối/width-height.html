@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: chocolate;
+            /* text sẽ tràn ra ngoài box vì box nhỏ quá */
+        }
+
+        .box1 {
+            width: 200px;
+            background-color: chocolate;
+            min-height: 200px;
+            /* box sẽ đặt chiều cao nhỏ nhất là 200px
+               Và khi text chàn ra ngoài thì box sẽ tự động tăng cho vừa với text
+            */
+        }
+    </style>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quae sunt reprehenderit optio quasi natus?</p>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="box1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eaque vitae exercitationem at quibusdam assumenda distinctio quod et quas commodi, placeat aliquam, voluptate libero eos voluptatum aspernatur. Fugiat, sit! Facere minima eos cumque velit explicabo molestias, similique pariatur expedita quasi, ex veniam dolore sit, quis provident accusantium nisi adipisci architecto nemo nihil optio! Sint excepturi facere dolor corrupti obcaecati, illum sed pariatur. Suscipit sunt sapiente tempora illo amet doloremque culpa tenetur veniam ex molestiae! Autem quod ipsum perferendis in tempore sunt mollitia non laudantium voluptate dolore, beatae nihil eligendi commodi aliquam voluptatibus est, qui suscipit, dolorum quaerat. Quisquam, sit rem.</p>
+    </div>
+
+</body>
+</html>

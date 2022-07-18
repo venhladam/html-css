@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        1.Css inline > internal > external
+        2.id ưu tiên hơn class
+        3.selector chi tiết nó sẽ ưu tiên hơn selector chung chung
+        4.Các selector ở dưới ưu tiên hơn các selector bên trên cùng cấp (cùng là id hay cùng là class)
+     -->
+     <style>
+        /* nó vẫn là màu brown cho dù cái blue nằm dưới vì cái brown viết chi tiết hơn */
+        h1.hello{
+            color: brown;
+        }
+        .hello{
+            color: blue;
+        }
+     </style>
+     <h1 class="hello">Xin chào các bạn</h1>
+     
+</body>
+</html>
