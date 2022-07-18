@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* chọn các phần tử p nhưng bỏ cái p nào mà có class="active" */
+        p:not(.active){
+            color: red;
+        }
+        /* chọn các thẻ bên trong id wrapper và ko phải thẻ p */
+        /* Phải có dấu cách nha */
+        #wrapper :not(p){
+            color: rgb(20, 220, 140);
+        }
+    </style>
+    <div id="wrapper">
+        <p>Item1</p>
+        <p class="active">Item2</p>
+        <p>Item3</p>
+        <p>Item4</p>
+
+        <div>Item5</div>
+        <div>Item6</div>
+    </div>
+    
+</body>
+</html>
