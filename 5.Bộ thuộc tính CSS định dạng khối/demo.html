@@ -8,18 +8,38 @@
 </head>
 <body>
     <style>
-        .imgright {
-            float: right;
+        .center {
+          text-align: center;
+          border: 3px solid purple;
+        }
+        
+        .left {
+          text-align: left;
+          border: 3px solid purple;
+        }
+        .right {
+          text-align: right;
+          border: 3px solid purple;
         }
     </style>
-    
-    <p>
-        <img src="https://xuanthulab.net/public/img/logo.png" 
-            style="width: 200px; height: auto" class="imgright" />
-        Đoạn văn này có một hình ảnh nó được thiết lập để trôi về
-        bên <code>phải</code> với thuộc tính CSS là <code>float: right;</code>
-        Bạn cũng nên thiết lập thuộc tính margin cho ảnh, 
-        để chữ không gần ảnh quá.
-    </p>
+
+    <h2>Căn giữa</h2>
+
+    <div class="center">
+        <p>Website Quản trị mạng</p>
+    </div>
+
+    <h2>Căn trái</h2>
+
+    <div class="left">
+        <p>Website Quản trị mạng</p>
+    </div>
+
+    <h2>Căn phải</h2>
+
+    <div class="right">
+        <p>Website Quản trị mạng</p>
+    </div>
+
 </body>
 </html>

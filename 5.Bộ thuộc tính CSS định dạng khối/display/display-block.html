@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Các phần tử của display đc hiển thị theo dạng khối
+         Độ rộng mặc định nó chiếm luôn ko gian hàng ngang(width của thẻ chứa nó cho dù nó to hay nhỏ) -->
+         <style>
+            .wrapper {
+                width: 960px;
+                margin: 0 auto;
+            }
+            /* .link-group a{
+               display: block;
+               background-color: brown;
+               margin-bottom: 20px;
+            } */
+
+            /* kết hợp với float thì nó sẽ nằm đc trên cùng 1 hàng và dính lại với nhau.ko có khoảng cách như inline-block */
+            .link-group a{
+               display: block;
+               float:left ;
+               background-color: brown;
+               margin-bottom: 20px;
+               border-right: 1px solid aqua;
+               color: aliceblue;
+            }
+        </style>
+        <div class="wrapper">
+            <div class="link-group">
+                <a href="">link1</a>
+                <a href="">link2</a>
+                <a href="">link3</a>
+                <a href="">link4</a>
+            </div>
+        </div>
+</body>
+</html>

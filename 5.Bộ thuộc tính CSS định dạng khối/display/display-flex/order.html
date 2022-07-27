@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- order:value
+         value: ... -1 , 0 , 1, 2 ...
+         Thay đổi vị trí hiển thị của các item phía trong phần tử display flex
+         mà ko cần tác động đến cấu trúc html
+         order mặc định là 0 , order nhỏ sắp xếp trc
+    -->
+
+    <style>
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            background-color: darkgoldenrod;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+           
+        }
+        .box {
+            width: 100px;
+            padding: 40px;
+            background-color: blueviolet;
+            margin: 10px;
+            text-align: center;
+            color: aliceblue;
+        }
+        .item1 {
+            order: 1;
+        }
+        .item2 {
+            order: 6;
+        }
+        .item3 {
+            order: -5;
+        }
+
+    </style>
+    <div class="container">
+        <div class="box item1">1</div>
+        <div class="box item2">2</div>
+        <div class="box item3">3</div>
+        <div class="box item4">4</div>
+    </div>
+</body>
+</html>

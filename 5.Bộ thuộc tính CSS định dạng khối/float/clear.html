@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- clear dùng để ngăn chặn việc float của các phần tử phía dưới
+        clear:value
+        value: none,left,right,both(cả left và right)
+    -->
+    <style>
+        .wrapper {
+            width: 960px;
+            margin: 0 auto;
+        }
+        .post-title {
+            display: block;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+        .post-thumb {
+            width: 200px;
+            display: block;
+            float: left;
+            margin-right: 20px;
+        }
+        .post-thumb img {
+            max-width: 100%;
+        }
+        .clear-both {
+            clear: both;
+        }
+    </style>
+
+    <div class="wrapper">
+        <article>
+            <a href="" class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, ad.</a>
+            <a href="" class="post-thumb">
+                <img src="/Image/naruto_cute.png" alt="lỗi ảnh">
+            </a>
+            <p class="post-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque voluptate labore, cupiditate provident quis molestiae id ducimus incidunt? Autem quisquam ad dolores blanditiis nobis neque, eos cum iure ducimus nemo!</p>
+        </article>
+
+        
+        <div class="clear-both"></div>
+        <!-- Ta muốn cái p này ko bị đẩy lên trên -->
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi molestias reprehenderit delectus rerum odit illo, ad vero, facere beatae soluta, pariatur animi distinctio quasi? Corrupti laboriosam vitae assumenda quo ipsa aperiam, ullam quaerat quam ducimus incidunt blanditiis nisi nemo, reiciendis consequatur vel unde possimus, dolore sint harum repudiandae eos odio. Nihil, quis pariatur. Soluta fugit expedita deserunt accusantium corrupti consectetur numquam rerum dolores error quas odio, nulla possimus similique officia placeat unde! Molestiae debitis repellat suscipit perferendis iure quos ducimus excepturi culpa sed vel odio porro maiores provident, illum modi optio in quae quisquam sequi, aut ab ex eaque quod. Nihil corporis reiciendis eligendi? Natus, quod iure aperiam adipisci pariatur qui ipsa soluta dolorum quis temporibus quidem quam et, delectus eos recusandae repellat aliquid debitis dicta? Saepe, repudiandae nobis suscipit illo ea ipsa dolorum optio nemo voluptas. Facilis provident corrupti cum voluptatum nostrum facere iusto laboriosam enim adipisci quae nemo quia autem, natus ipsam architecto consequuntur commodi consequatur tempore aspernatur nobis illo alias pariatur voluptates. Soluta quibusdam repellat aliquid iusto ex laudantium quae, accusantium et vel. Magnam veritatis facere tempora iure corrupti, officiis optio ipsum vitae nulla voluptatibus totam dolorem commodi cumque voluptatem cum ducimus quas aliquam sunt eveniet esse.</p>
+    </div>
+</body>
+</html>

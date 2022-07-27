@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Với CSS float, 1 phần tử có thể đẩy về trái hoặc phải, cho phép các phần tử khác bám quanh nó -->
+    <!-- float: value
+        value: none,left,right
+    -->
+    <style>
+        /* .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: olive;
+        } */
+
+        /* .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+            float: right;
+        } */
+
+        .wrapper {
+            width: 960px;
+            margin: 0 auto;
+        }
+        .post-title {
+            display: block;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+        .post-thumb {
+            width: 200px;
+            display: block;
+            float: left;
+            margin-right: 20px;
+        }
+        .post-thumb img {
+            max-width: 100%;
+        }
+    </style>
+    <!-- <div class="box1"></div>
+    <div class="box2"></div> -->
+
+    <div class="wrapper">
+        <article>
+            <a href="" class="post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, ad.</a>
+            <a href="" class="post-thumb">
+                <img src="/Image/naruto_cute.png" alt="lỗi ảnh">
+            </a>
+            <p class="post-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque voluptate labore, cupiditate provident quis molestiae id ducimus incidunt? Autem quisquam ad dolores blanditiis nobis neque, eos cum iure ducimus nemo!</p>
+        </article>
+    </div>
+</body>
+</html>
