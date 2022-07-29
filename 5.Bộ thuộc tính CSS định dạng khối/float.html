@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Với CSS float, 1 phần tử có thể đẩy về trái hoặc phải, cho phép các phần tử khác bám quanh nó -->
+    <!-- float: value
+        value: none,left,right
+    -->
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: olive;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+            float: right;
+        }
+    </style>
+    <div class="wrapper">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

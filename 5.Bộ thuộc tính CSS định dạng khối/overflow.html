@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Khi mà nội dung bên trong 1 box mà lớn hơn kích thước của box ta dùng overflow -->
+    <!-- overflow: value
+        value:visible(mặc định),hidden(ẩn phần tràn ra),auto(tự động xuất hiện thanh quận khi tràn),
+        scroll(thanh quận cả 2, dọc và ngang)
+    -->
+    <style>
+        .box {
+            width: 200px;
+            height: 500px;
+            border: 1px solid red;
+            /* overflow: hidden ; */
+            /* overflow: auto; */
+            overflow: scroll;
+        }
+    </style>
+
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, mollitia odio animi praesentium, sit iure quis beatae numquam repudiandae quo voluptatibus alias incidunt libero dolorem deserunt quas sunt officiis voluptate quia fugit molestias eum iste repellat! Rem nesciunt totam error odio aliquid, temporibus nisi ipsam ab nihil porro cupiditate corporis incidunt itaque, perspiciatis assumenda quo minus magnam. Eos fuga iusto odit voluptate fugiat exercitationem, at assumenda similique qui hic nostrum, earum quae vero laudantium beatae ducimus doloremque reprehenderit perferendis repudiandae quis error sed eaque. A assumenda sit molestias nesciunt quia libero, vel voluptas magnam necessitatibus suscipit nisi quidem animi laudantium.</p>
+    </div>
+</body>
+</html>

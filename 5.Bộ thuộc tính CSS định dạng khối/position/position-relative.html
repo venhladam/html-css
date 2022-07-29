@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- position: static(mặc định),relative,absolute,fixed
+         1.relative:box vẫn chiếm diện tích,ta có thể di chuyển
+         2.absolute:phụ thuộc vào cái thẻ chứa nó mà có thuộc tính position:relative
+           Nó ko chiếm diện tích
+         3.fixed
+    -->
+    <style>
+        .wrapper {
+            width: 100%;
+            height: 400px;
+            background-color: black;
+            position: relative;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .box2 {
+            /* muốn cho box 2 lên đầu */
+            z-index: 2;
+        }
+        /* Căn giữa khi dùng position */
+        .box1 {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+        
+    </style>
+    <div class="wrapper">
+        <div class="box box1" style="background-color: blue;"></div>
+        <div class="box box2" style="background-color: brown;"></div>
+        <div class="box box3" style="background-color: chartreuse;"></div>
+        <p style="color: aliceblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae tenetur quod ducimus libero dolor nesciunt, numquam laudantium eaque nobis provident sapiente ex voluptatum saepe itaque doloremque alias quas autem optio sunt molestias? Recusandae possimus culpa numquam? Voluptates debitis laborum ipsa cupiditate deleniti minima ex laudantium nobis quisquam! Velit voluptas nobis vel inventore perferendis! Omnis, nesciunt. Ea praesentium itaque repudiandae molestiae debitis illo officiis, asperiores vitae ipsam odio amet error sint id tenetur, qui minima tempore aliquid dolor officia! Non reiciendis saepe fuga distinctio dolorem delectus nostrum ipsa tempora, nisi obcaecati ullam impedit modi corrupti esse ex, earum quo numquam doloribus.</p>
+    </div>
+</body>
+</html>
