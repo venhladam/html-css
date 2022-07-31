@@ -8,48 +8,136 @@
 </head>
 <body>
     <style>
-        .wrapper {
+        * {
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+       
+        .margin-10{
+            display: block;
+            margin: 10px 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #wrapper {
             width: 960px;
             margin: 0 auto;
-            border: 1px solid #333131;
+            /* border: 1px solid #333131; */
         }
-        h1 {
-            text-transform: uppercase;
+        #wrapper h1{
             text-align: center;
+            text-transform: uppercase;
         }
-        .box{
-            width: 200px;
-            height: 280px;
-            background-color: brown;
-            /* margin: 20px 30px; */
+        #wrapper ul{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+            flex-wrap: wrap;
         }
-        .box1 {
+         /* .list-product {
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid #333131;
+        } */
+        .list-product li {
+            flex-basis: 33.33%;
+            padding: 0 15px;
+            margin-bottom: 30px;
+        }
+        .list-item{
             position: relative;
-            left: 30px;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 15px 0;
         }
-        .box3 {
-            position: relative;
-            right: 30px;
+        span img{
+            position: absolute;
+            top: 0;
+            right: 0;
         }
-        .product ul{
-            display: inline-block;
-            list-style-type: none;
+        .price {
+            font-weight: bold;
+            color: orange;
         }
-        ul li{
-            display: inline-block;
+        .list-item:hover {
+            border: 1px solid orange;
         }
+
     </style>
-    <div class="wrapper">
-        <h1>bài tập 7 hiển thị danh sách sản phẩm</h1>
-        <div class="product">   
-            <ul>
-                <li>
-                    <div class="box box1"></div>
-                </li>
-                <li><div class="box box2"></div></li>
-                <li><div class="box box3"></div></li>
-            </ul>
-        </div>
+    <div id="wrapper">
+        <h1>bài tập 7 - hiển thị danh sách sản phẩm</h1>
+        <ul class="list-product">
+            <li>
+                <div class="list-item">
+                    <a href=""><img src="/Bài thực hành 7/image/product5.jpg" alt="Product1"></a>
+                    <div class="price margin-10">499.000đ</div>
+                    <a href="" class="margin-10">Lorem ipsum dolor sit amet.</a>
+                    <a href="" style="color:coral ;">Mua ngay</a>
+                    <span>
+                        <img src="/Bài thực hành 7/image/sale.png" alt="sale">
+                    </span>
+                </div>
+            </li>
+
+            <li>
+                <div class="list-item">
+                    <a href=""><img src="/Bài thực hành 7/image/product9.jpg" alt="Product1"></a>
+                    <div class="price margin-10">499.000đ</div>
+                    <a href="" class="margin-10">Lorem ipsum dolor sit amet.</a>
+                    <a href="" style="color:coral ;">Mua ngay</a>
+
+                </div>
+            </li>
+
+            <li>
+                <div class="list-item">
+                    <a href=""><img src="/Bài thực hành 7/image/product11.jpg" alt="Product1"></a>
+                    <div class="price margin-10">499.000đ</div>
+                    <a href="" class="margin-10">Lorem ipsum dolor sit amet.</a>
+                    <a href="" style="color:coral ;">Mua ngay</a>
+
+                </div>
+            </li>
+
+            <li>
+                <div class="list-item">
+                    <a href=""><img src="/Bài thực hành 7/image/product11.jpg" alt="Product11"></a>
+                    <div class="price margin-10">499.000đ</div>
+                    <a href="" class="margin-10">Lorem ipsum dolor sit amet.</a>
+                    <a href="" style="color:coral ;">Mua ngay</a>
+
+                </div>
+            </li>
+
+            <li>
+                <div class="list-item">
+                    <a href=""><img src="/Bài thực hành 7/image/product5.jpg" alt="Product1"></a>
+                    <div class="price margin-10">499.000đ</div>
+                    <a href="" class="margin-10">Lorem ipsum dolor sit amet.</a>
+                    <a href="" style="color:coral ;">Mua ngay</a>
+                    <span>
+                        <img src="/Bài thực hành 7/image/sale.png" alt="sale">
+                    </span>
+                </div>
+            </li>
+
+
+            <li>
+                <div class="list-item">
+                    <a href=""><img src="/Bài thực hành 7/image/product1.jpg" alt="Product1"></a>
+                    <div class="price margin-10">499.000đ</div>
+                    <a href="" class="margin-10">Lorem ipsum dolor sit amet.</a>
+                    <a href="" style="color:coral ;">Mua ngay</a>
+
+                </div>
+            </li>
+
+            
+        </ul>
+        <p style="text-align:center">unitop.vn</p>
     </div>
     
 </body>
