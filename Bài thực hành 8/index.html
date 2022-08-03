@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+       
+        .margin-10{
+            display: block;
+            margin: 10px 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #wrapper {
+            width: 960px;
+            margin: 0 auto;
+            /* border: 1px solid #333131; */
+        }
+        #wrapper h1{
+            text-align: center;
+            text-transform: uppercase;
+        }
+        #wrapper ul{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+         .list-product {
+            position: relative;
+            
+        }
+        .list-product li {
+            flex-basis: 33.33%;
+            padding: 0 20px 30px;
+        }
+        .list-item{
+            position: relative;
+            text-align: center;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+        span img{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .price {
+            font-weight: bold;
+            color: orange;
+        }
+        .list-item:hover {
+            border: 1px solid orange;
+        }
+        .list-item:hover a img{
+            transform: rotate(1deg);
+        }
+        li .list-item .buy-now{
+            position: absolute;
+            background-color: orange;
+            right: 0;
+            left: 0;
+            padding: 5px;
+            bottom: -29px; 
+            transition: all 0.5s;
+            color: white;
+        }
+
+        .list-item a img {
+        }
+        .list-product li .list-item:hover .buy-now{
+            bottom: 0px;
+        }
+    </style>
+    <div id="wrapper">
+        <h1>bài tập 7 - hiển thị danh sách sản phẩm</h1>
+        <ul class="list-product">
+            <li>
+                <div class="list-item">
+                    <a href=""><img src="/Bài thực hành 7/image/product5.jpg" alt="Product1"></a>
+                    <div class="price margin-10">499.000đ</div>
+                    <a href="" class="margin-10">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                    <span>
+                        <img src="/Bài thực hành 7/image/sale.png" alt="sale">
+                    </span>
+                </div>
+            </li>
+
+            <li>
+                <div class="list-item">
+                    <a href=""><img src="/Bài thực hành 7/image/product9.jpg" alt="Product1"></a>
+                    <div class="price margin-10">499.000đ</div>
+                    <a href="" class="margin-10">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="buy-now">Mua ngay</a>
+
+                </div>
+            </li>
+
+            <li>
+                <div class="list-item">
+                    <a href=""><img src="/Bài thực hành 7/image/product11.jpg" alt="Product1"></a>
+                    <div class="price margin-10">499.000đ</div>
+                    <a href="" class="margin-10">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="buy-now">Mua ngay</a>
+
+                </div>
+            </li>
+
+            <li>
+                <div class="list-item">
+                    <a href=""><img src="/Bài thực hành 7/image/product11.jpg" alt="Product11"></a>
+                    <div class="price margin-10">499.000đ</div>
+                    <a href="" class="margin-10">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="buy-now">Mua ngay</a>
+
+                </div>
+            </li>
+
+            <li>
+                <div class="list-item">
+                    <a href=""><img src="/Bài thực hành 7/image/product5.jpg" alt="Product1"></a>
+                    <div class="price margin-10">499.000đ</div>
+                    <a href="" class="margin-10">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                    <span>
+                        <img src="/Bài thực hành 7/image/sale.png" alt="sale">
+                    </span>
+                </div>
+            </li>
+
+
+            <li>
+                <div class="list-item">
+                    <a href=""><img src="/Bài thực hành 7/image/product1.jpg" alt="Product1"></a>
+                    <div class="price margin-10">499.000đ</div>
+                    <a href="" class="margin-10">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="buy-now">Mua ngay</a>
+
+                </div>
+            </li>
+
+            
+        </ul>
+        <p style="text-align:center">unitop.vn</p>
+    </div>
+    
+</body>
+</html>
